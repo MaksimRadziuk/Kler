@@ -4,12 +4,56 @@
 	<meta charset="UTF-8">
 	<title>Карточка товара</title>
 	
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" href="card.css">
 </head>
 <body>
+
+	<header>
+		<div class="topbar">
+			<div class="content_wrap">
+				<ul class="navbar">
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Проекты</a></li>
+					<li><a href="#">Презентация</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="adress"><span>Метро "Серпуховская", 1-й Щипковский пер. 4, 2-й этаж "Твинстор"</span></div>
+				<div class="search_input-wrap">
+					<button><img src="img/search_icon-white.png" alt="search"></button>
+					<input type="text" placeholder="Поиск по сайту">
+				</div>
+			</div>
+		</div>
+		<div class="header">
+			<div class="content_wrap">
+				<div class="logo_wrap">
+					<div class="logo"><img src="img/logo_white.png" alt="KLER"></div>
+					<div class="logo_divider"></div>
+					<span class="logo_text">официальный  дистрибьютор<br><b>Kler</b>  в  России</span>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#">О фабрике</a></li>
+						<li><a href="#">Гостиные</a></li>
+						<li><a href="#">Спальни</a></li>
+						<li><a href="#">Столы и стулья</a></li>
+						<li><a href="#">Распродажа</a></li>
+						<li><a href="#">Как заказать</a></li>
+					</ul>
+				</div>
+				<div class="phone_wrap">
+					<a href="tel:84993901271">7 (499) 390 12 71</a>
+					<span>Без выходных</span>
+				</div>
+			</div>
+		</div>
+	</header>
 	
-	<section>
+	<section class="breadcrumbs_section">
 		<div class="content_wrap">
 			<ul class="breadcrumbs">
 				<li><a href="index.html">Главная</a></li>
@@ -23,7 +67,9 @@
 		<div class="content_wrap">
 			<h1>ДИВАН KLER CAN-CAN - W110 (Раскладной, гостевой механизм)</h1>
 			<img src="img/item_main_110.jpg" alt="Диван KLER CAN-CAN - W110" class="mainPhoto">
-			<div class="tabs_wrap">
+		</div>
+		<div class="tabs_wrap active">
+			<div class="content_wrap">
 				<div class="tabs_triggers">
 					<div class="bottom_bar"></div>
 					<div class="tab active" id="descriptionTrigger">Описание</div>
@@ -32,7 +78,86 @@
 					<div class="tab" id="priceTrigger">комплектация и цены</div>
 				</div>
 				<div class="tabs_content">
-					<div class="tab_content" id="descriptionTab"></div>
+					<div class="tab_content active" id="descriptionTab">
+						<div class="text_info">
+							<img src="img/description_text_img-item1.jpg" alt="Крутой диван!">
+							<p><span class="bold">Внимание! Цена указана за диван в тканевой отделке,  без механизма трансформации в кровать.</span>
+							<span class="bold doubleGap">Для данной модели доступно более 40 вариантов итальянской обивочной ткани в различных цветовых вариантах, а также натуральная кожа.</span>
+							<span>Универсальность простых линий и форм, образующих дизайн этого элегантного дивана, позволяют, в зависимости от обивки, интерпретировать его и как идеальный вариант для модерных интерьеров, и как спокойную-модель, которая отлично впишется в гостиную с классической обстановкой. Диван CAN-CAN отличается инновационной системой подъема спинки, которая позволяет регулировать ее высоту и глубину дивана. При этом спинка каждого сидения регулируется независимо, что позволяет максимизировать ваш комфорт при совместном времяпрепровождении. </span>
+							<span>Вы можете заказать стандартные двухместные и трехместные модели (в то числе – с механизмом трансформации в кровать), а также удобные кресла. Для того, чтобы ваша мягкая мебель идеально вписалась в обстановку гостиной, рекомендуем подобрать модульный диван, подходящий именно для вас (с удлиненным сиденьем-шезлонгом (оборудован ящиком для белья), с двумя или с одной боковиной, прямые и угловые). Диван CAN-CAN универсален и подойдет как для небольших, так и для просторных гостиных. </span>
+							<span>Варианты обивки (ткань или кожа) широко варьируются как по фактуре, так и по колористике. Мягкая мебель CAN-CAN – это стиль и высочайшее качество изготовления!</span></p>
+						</div>
+						<div class="infograph">
+							<table>
+								<tr>
+									<td><img src="img/description_icon-leather.png"><span>Натуральная<br>кожа</span></td>
+									<td><img src="img/description_icon-sprung.png"><span>Независимые<br>пружинные блоки</span></td>
+									<td><img src="img/description_icon-transform.png"><span>Раскладной<br>диван</span></td>
+								</tr>
+								<tr>
+									<td><img src="img/description_icon-regulation.png"><span>Регулируемая<br>спинка</span></td>
+									<td><img src="img/description_icon-textile.png"><span>Ткань</span></td>
+									<td><img src="img/description_icon-storagebox.png"><span>Ящик для<br>хранения</span></td>
+								</tr>
+							</table>
+							<img src="img/description_text_img-item2.jpg" alt="Крутой диван!">
+						</div>
+						<div class="priceAndOptions">
+							<div class="img_wrap">
+								<img src="img/description_text_img-item3.jpg" alt="">
+								<img src="img/description_text_img-item4.jpg" alt="">
+							</div>
+							<div class="table_wrap">
+								<div class="title">цены и варианты</div>
+								<table>
+									<tr>
+										<td>Кресло</td>
+										<td>от 81 700 р.</td>
+										<td><img src="img/description_icon-1seat.png" alt="Кресло"></td>
+									</tr>
+									<tr>
+			
+										<td>2-х местный</td>
+										<td>от 117 500 р.</td>
+										<td><img src="img/description_icon-2seats.png" alt="2-х местный"></td>
+									</tr>
+									<tr>
+										<td>3-х местный</td>
+										<td>от 135 800 р.</td>
+										<td><img src="img/description_icon-3seats.png" alt="3-х местный"></td>
+									</tr>
+									<tr>
+										<td>Угловой</td>
+										<td>от 226 800 р.</td>
+										<td><img src="img/description_icon-4seats.png" alt="Угловой"></td>
+									</tr>
+								</table>
+								<div class="examples_wrap">
+									<a href="#">Образцы кожи</a>
+									<a href="#">Образцы ткани</a>
+								</div>
+								<div class="buttons_wrap">
+									<a href="#">отправить заявку</a>
+									<a href="#">как купить и оплатить</a>
+								</div>
+							</div>
+						</div>
+						<div class="carousel">
+							<div><img src="img/description_slide-1.jpg" alt=""></div>
+							<div><img src="img/description_slide-1.jpg" alt=""></div>
+							<div><img src="img/description_slide-1.jpg" alt=""></div>
+							<div><img src="img/description_slide-1.jpg" alt=""></div>
+							<div><img src="img/description_slide-1.jpg" alt=""></div>
+						</div>
+						<div class="bottom_wrap">
+							<div class="leftPart">
+								<img src="img/description_text_img-item5.jpg" alt="">
+							</div>
+							<div class="rightPart">
+								<img src="img/description_text_img-item6.jpg" alt="">
+							</div>
+						</div>
+					</div>
 					<div class="tab_content" id="cardTab"></div>
 					<div class="tab_content" id="certificatesTab"></div>
 					<div class="tab_content" id="priceTab"></div>
@@ -41,6 +166,8 @@
 		</div>
 	</section>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
 	<script src="card.js"></script>
 </body>
 </html>
