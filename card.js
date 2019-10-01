@@ -22,7 +22,20 @@ $(document).ready(function(){
 		infinite:true,
 		dots:true,
 		slidesToShow:5,
-		slidesToScroll:5
+		slidesToScroll:5,
+		responsive:[
+			{
+			breakpoint:1661,
+			settings:{
+				slidesToShow:4,
+				slidesToScroll:4},
+			breakpoint:1261,
+			settings:{
+				slidesToShow:3,
+				slidesToScroll:3
+			}
+			}
+		]
 	});
 
 	let tabWidth = $('#descriptionTrigger').innerWidth();
@@ -67,5 +80,26 @@ $(document).ready(function(){
 		let tabWidth = $('#priceTrigger').innerWidth();
 		let leftPosition = $('#priceTrigger').position().left;
 		$('.bottom_bar').css({'width': tabWidth, 'left':leftPosition});
+	});
+
+	$('.close').click(function(){
+		$(this).parent('.popup').removeClass("active");
+	});
+	$('.location_block').click(function(){
+		$('.popup').removeClass("active");
+		$('#locationPopup').toggleClass("active");
+	});
+	$('.phone_block').click(function(){
+		$('.popup').removeClass("active");
+		$('#phonePopup').toggleClass("active");
+	});
+	$('.search_block').click(function(){
+		$('.popup').removeClass("active");
+		$('#searchPopup').toggleClass("active");
+	});
+
+	$(window).resize(function(){
+		let tabWidth = $('#descriptionTrigger').innerWidth();
+		$('.bottom_bar').css('width', tabWidth);
 	});
 });

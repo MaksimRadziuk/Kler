@@ -11,7 +11,7 @@
 </head>
 <body>
 
-	<header>
+	<header class="desktop">
 		<div class="topbar">
 			<div class="content_wrap">
 				<ul class="navbar">
@@ -50,6 +50,38 @@
 					<span>Без выходных</span>
 				</div>
 			</div>
+		</div>
+	</header>
+	<header class="mobile">
+		<div class="hamburger_wrap">
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="logo_wrap">
+			<img src="img/logo_white.png" alt="">
+		</div>
+		<div class="icon_wrap">
+			<div class="location_block"><img src="img/location_icon-white.png" alt=""></div>
+			<div class="phone_block"><img src="img/phone_icon-white.png" alt=""></div>
+			<div class="search_block"><img src="img/search_icon-white.png" alt=""></div>
+		</div>
+		<div class="popup" id="locationPopup">
+			<div class="adress"><span>Метро "Серпуховская", 1-й Щипковский пер. 4, 2-й этаж "Твинстор"</span></div>
+			<div class="close"><span></span><span></span></div>
+		</div>
+		<div class="popup" id="phonePopup">
+			<a href="tel:84993901271">7 (499) 390 12 71</a>
+			<div class="close"><span></span><span></span></div>
+		</div>
+		<div class="popup" id="searchPopup">
+			<div class="search_input-wrap">
+				<button><img src="img/search_icon-white.png" alt="search"></button>
+				<input type="text" placeholder="Поиск по сайту">
+			</div>
+			<div class="close"><span></span><span></span></div>
 		</div>
 	</header>
 	
