@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Карточка товара</title>
 	
 	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
@@ -38,11 +41,32 @@
 				<div class="menu">
 					<ul>
 						<li><a href="#">О фабрике</a></li>
-						<li><a href="#">Гостиные</a></li>
+						<li>
+							<a href="#">Гостиные</a>
+							<div class="dropdown_menu">
+								<ul>
+									<li><a href="#">Диваны и кресла</a></li>
+									<li><a href="#">Столики</a></li>
+									<li><a href="#">Мебель для гостиной</a></li>
+									<li><a href="#">Реклайнеры</a></li>
+									<li><a href="#">Пуфики</a></li>
+								</ul>
+							</div>
+						</li>
 						<li><a href="#">Спальни</a></li>
 						<li><a href="#">Столы и стулья</a></li>
 						<li><a href="#">Распродажа</a></li>
-						<li><a href="#">Как заказать</a></li>
+						<li>
+							<a href="#">Как заказать</a>
+							<div class="dropdown_menu">
+								<ul>
+									<li><a href="#">Тут можно</a></li>
+									<li><a href="#">Написать</a></li>
+									<li><a href="#">Что нибудь</a></li>
+									<li><a href="#">Своё)</a></li>
+								</ul>
+							</div>
+						</li>
 					</ul>
 				</div>
 				<div class="phone_wrap">
@@ -83,6 +107,33 @@
 			</div>
 			<div class="close"><span></span><span></span></div>
 		</div>
+		<div class="popup" id="mobileMenu">
+			<div class="close"><span></span><span></span></div>
+			<ul>
+				<li><a href="#">О фабрике</a></li>
+				<li>
+					<a href="#">Гостиные</a>
+					<ul class="submenu">
+						<li><a href="#">Диваны и кресла</a></li>
+						<li><a href="#">Столики</a></li>
+						<li><a href="#">Мебель для гостиной</a></li>
+						<li><a href="#">Реклайнеры</a></li>
+						<li><a href="#">Пуфики</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Спальни</a></li>
+				<li><a href="#">Столы и стулья</a></li>
+				<li><a href="#">Распродажа</a></li>
+				<li><a href="#">Как заказать</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Проекты</a></li>
+				<li><a href="#">Презентация</a></li>
+				<li><a href="#">Блог</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
 	</header>
 	
 	<section class="breadcrumbs_section">
@@ -113,14 +164,16 @@
 					<div class="tab_content active" id="descriptionTab">
 						<div class="text_info">
 							<img src="img/description_text_img-item1.jpg" alt="Крутой диван!">
-							<p><span class="bold">Внимание! Цена указана за диван в тканевой отделке,  без механизма трансформации в кровать.</span>
+							<p>
+							<span class="mobile title">описание</span>
+							<span class="bold">Внимание! Цена указана за диван в тканевой отделке,  без механизма трансформации в кровать.</span>
 							<span class="bold doubleGap">Для данной модели доступно более 40 вариантов итальянской обивочной ткани в различных цветовых вариантах, а также натуральная кожа.</span>
 							<span>Универсальность простых линий и форм, образующих дизайн этого элегантного дивана, позволяют, в зависимости от обивки, интерпретировать его и как идеальный вариант для модерных интерьеров, и как спокойную-модель, которая отлично впишется в гостиную с классической обстановкой. Диван CAN-CAN отличается инновационной системой подъема спинки, которая позволяет регулировать ее высоту и глубину дивана. При этом спинка каждого сидения регулируется независимо, что позволяет максимизировать ваш комфорт при совместном времяпрепровождении. </span>
 							<span>Вы можете заказать стандартные двухместные и трехместные модели (в то числе – с механизмом трансформации в кровать), а также удобные кресла. Для того, чтобы ваша мягкая мебель идеально вписалась в обстановку гостиной, рекомендуем подобрать модульный диван, подходящий именно для вас (с удлиненным сиденьем-шезлонгом (оборудован ящиком для белья), с двумя или с одной боковиной, прямые и угловые). Диван CAN-CAN универсален и подойдет как для небольших, так и для просторных гостиных. </span>
 							<span>Варианты обивки (ткань или кожа) широко варьируются как по фактуре, так и по колористике. Мягкая мебель CAN-CAN – это стиль и высочайшее качество изготовления!</span></p>
 						</div>
 						<div class="infograph">
-							<table>
+							<table class="desktop">
 								<tr>
 									<td><img src="img/description_icon-leather.png"><span>Натуральная<br>кожа</span></td>
 									<td><img src="img/description_icon-sprung.png"><span>Независимые<br>пружинные блоки</span></td>
@@ -131,6 +184,22 @@
 									<td><img src="img/description_icon-textile.png"><span>Ткань</span></td>
 									<td><img src="img/description_icon-storagebox.png"><span>Ящик для<br>хранения</span></td>
 								</tr>
+							</table>
+							<table class="mobile">
+								<tbody>
+									<tr>
+										<td><img src="img/description_icon-leather.png"><span>Натуральная<br>кожа</span></td>
+										<td><img src="img/description_icon-sprung.png"><span>Независимые<br>пружинные блоки</span></td>
+									</tr>
+									<tr>
+										<td><img src="img/description_icon-transform.png"><span>Раскладной<br>диван</span></td>
+										<td><img src="img/description_icon-regulation.png"><span>Регулируемая<br>спинка</span></td>
+									</tr>
+									<tr>
+										<td><img src="img/description_icon-textile.png"><span>Ткань</span></td>
+										<td><img src="img/description_icon-storagebox.png"><span>Ящик для<br>хранения</span></td>
+									</tr>
+								</tbody>
 							</table>
 							<img src="img/description_text_img-item2.jpg" alt="Крутой диван!">
 						</div>
@@ -165,8 +234,8 @@
 									</tr>
 								</table>
 								<div class="examples_wrap">
-									<a href="#">Образцы кожи</a>
-									<a href="#">Образцы ткани</a>
+									<a href="#"><span>Образцы кожи</span></a>
+									<a href="#"><span>Образцы ткани</span></a>
 								</div>
 								<div class="buttons_wrap">
 									<a href="#">отправить заявку</a>
@@ -192,8 +261,10 @@
 					</div>
 					<div class="tab_content" id="cardTab">
 						<img src="img/technical_card.jpg" alt="">
+						<a href="#">Скачать pdf</a>
 					</div>
 					<div class="tab_content" id="certificatesTab">
+						<div class="mobile title">европейские сертификаты безопасности</div>
 						<div class="certificate_row">
 							<div class="img_wrap"><img src="img/euro_certificate.jpg" alt=""></div>
 							<div class="img_wrap"><img src="img/euro_certificate.jpg" alt=""></div>
@@ -202,7 +273,7 @@
 						</div>
 					</div>
 					<div class="tab_content" id="priceTab">
-						<table>
+						<table class="desktop">
 							<tr>
 								<th>Модель</th>
 								<th>Описание</th>
@@ -231,6 +302,38 @@
 								<td>K1S2</td>
 								<td>63 200 руб.</td>
 							</tr>
+						</table>
+						<div class="mobile title">комплектация и цены</div>
+						<table class="mobile_table">
+							<tbody>
+								<tr>
+									<td><img src="img/price_icon-chest2.jpg" alt=""></td>
+									<td>
+										<div class="name">Комод с двумя выдвижными ящиками</div>
+										<div class="code">K1S2</div>
+										<div class="parameters">В51 x  Ш88 x  Г44 (cm)</div>
+										<div class="price">63 200 руб.</div>
+									</td>
+								</tr>
+								<tr>
+									<td><img src="img/price_icon-chest2.jpg" alt=""></td>
+									<td>
+										<div class="name">Комод с двумя выдвижными ящиками</div>
+										<div class="code">K1S2</div>
+										<div class="parameters">В51 x  Ш88 x  Г44 (cm)</div>
+										<div class="price">63 200 руб.</div>
+									</td>
+								</tr>
+								<tr>
+									<td><img src="img/price_icon-chest2.jpg" alt=""></td>
+									<td>
+										<div class="name">Комод с двумя выдвижными ящиками</div>
+										<div class="code">K1S2</div>
+										<div class="parameters">В51 x  Ш88 x  Г44 (cm)</div>
+										<div class="price">63 200 руб.</div>
+									</td>
+								</tr>
+							</tbody>
 						</table>
 					</div>
 				</div>
@@ -284,6 +387,7 @@
 					</div>
 				</div>
 			</div>
+			<div class="button_showMore">показать еще</div>
 		</div>			
 	</section>
 	<section class="anotherGoods">
@@ -371,6 +475,7 @@
 					</div>
 				</div>
 			</div>
+			<div class="button_showMore">показать еще</div>
 		</div>
 	</section>
 	<footer>
