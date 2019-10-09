@@ -174,12 +174,14 @@ header .header>.content_wrap {
 }
 header .menu {
 	height: 100%;
+	width: 55%;
 }
 header .menu>ul{
 	display: flex;
 	align-items:center;
 	justify-content: flex-start;
 	height: 100%;
+	width: 100%;
 }
 header .menu>ul>li {
 	margin-right: 45px;
@@ -194,6 +196,7 @@ header .menu>ul>li .dropdown_menu {
 	background-color: #fff;
 	width: 215px;
 	z-index: 10;
+	transition: none;
 }
 header .menu>ul>li .dropdown_menu:before {
 	content: '';
@@ -225,7 +228,7 @@ header .menu>ul>li .dropdown_menu ul li a{
 	text-align: left;
 	text-decoration: none;
 	font-weight: 400;
-	transition: none;
+	transition: all 0s linear;
 }
 header .menu>ul>li .dropdown_menu ul li a:hover {
 	font-weight: 600;
@@ -673,6 +676,8 @@ section.cardBody h1 {
 #cardTab img {
 	width: auto;
 	max-width: 100%;
+	margin: 0 auto;
+	display: block;
 }
 
 #certificatesTab {
@@ -1498,6 +1503,11 @@ footer .bottom_part a:last-child {
 		margin-right: 20px;
 	}
 }
+@media all and (max-width:960px) {
+	.similar_slider-wrap .slick-dots li {
+		width: 35px;
+	}
+}
 @media all and (max-width: 850px) {
 	section.breadcrumbs_section {
 		display: none;
@@ -1686,7 +1696,7 @@ footer .bottom_part a:last-child {
 	#priceTab table.desktop {
 		display: none;
 	}
-	#priceTab table.mobile {
+	#priceTab table.mobile_table {
 		display: block;
 	}
 	#priceTab table.mobile .tbody {
